@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+   <header>
+
+   </header>
+   <main>
+    <!-- div container -->
+    <div>
+        <!-- area container -->
+        <div class="flex-1 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 X b X h</p>
+                  <p>
+                    <input type="text" class="w-24 px-2 border text-xl" placeholder="base" name="" id="triangle-base">
+                    <span class="ml-3">cm</span>
+                    <input type="text" class="w-24 px-2 border text-xl ml-3" placeholder="height" name="" id="triangle-height">
+                    <span class="ml-3">cm</span>
+                  </p>
+                  <div class="card-actions">
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary  w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+   </main>
+   <script src="./scripts/triangle.js"></script>
 </body>
 </html>
